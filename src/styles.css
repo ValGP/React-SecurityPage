@@ -1,0 +1,430 @@
+:root {
+    --color-principal: #1A1E57;
+    --color-secundario: #5079F2;
+    --color-secundario-claro: #6878A6;
+    --color-background: #f5f7ff;
+    --blanco: white;
+    --fuente-principal: 'Poppins', sans-serif
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-principal);
+    font-size: 15;
+  }
+
+.celeste {
+    color: #5079F2;
+}
+
+  /* NAVBAR */
+nav {
+    background-color: white;
+}
+
+.nav-link {
+    color: #1A1E57;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.nav-button {
+    color: white;
+    background-color: #1A1E57;
+    border-radius: 5px;
+}
+
+.link-button {
+    color: white;
+    background-color: #5079F2;
+    padding: 0.7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 5px;
+}
+
+#llamanos {
+    color: white;
+}
+
+ /* NAVBAR FIN */
+
+/* HOMEPAGE */
+
+.titulo-inicio {
+    font-weight: bold;
+    font-size: 2.7rem;
+    color: #1A1E57;
+}
+
+/* PRODUCTOS ALARMA */
+
+.lista-alarmas {
+    margin-top: -3rem;
+    
+}
+
+.item-alarma {
+    margin: 0 auto;
+    width: 262px;
+    /* height: 450px; */
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.item-alarma .titulo-alarma {
+    font-size: 1.5rem;
+    color: #1A1E57;
+    font-weight: 700;
+    margin: 1.1rem auto;
+}
+
+.item-alarma img {
+    width: 100px;
+}
+
+/* ITEM CASA */
+
+.titulo-casas {
+    font-weight: 700;
+    font-size: 3.3rem;
+}
+
+.container-casas {
+   padding: 3rem;
+}
+
+.item-casa {
+    background-color: #1A1E57;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.item-casa img {
+    margin-top: 30px;
+}
+
+.item-casa-titulo {
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.item-casa-texto {
+    color: white;
+    font-size: 0.8rem;
+    
+}
+
+/* BANNER CONTRATA */
+
+.banner-contrata {
+    width: 1500;
+    height: 450;
+    color: white;
+    text-align: center;
+    background-image: url('/public/img/edificios-azul.png');
+    background-size: cover;
+    padding: 4rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.banner-titulo {
+    font-size: 3.4rem;
+}
+
+.banner-texto {
+    width: 800px;
+    margin: 1rem auto;
+}
+
+.banner-button {
+    background-color: white;
+    color: #1A1E57;
+}
+
+#banner-button {
+    color: #1A1E57;
+}
+
+/* FAQ */
+
+ .App {
+    text-align: center;
+  }
+ 
+  .question-section {
+    background: var(--color-background);
+    color: #1A1E57;
+    border-color: transparent;
+    border-radius: 8px;
+    
+    cursor: pointer;
+    width: 100%;
+    /* padding: 10px; */
+    padding-top: 15px;
+  }
+  
+  .question-align {
+    align-items: center;
+    display: flex;
+    min-height: 10px;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .question-align h4 {
+    margin-left: 8px;
+  }
+  
+  .question-styling {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .question-icon {
+    background: none;
+    border: none;
+    color: #1b6aae;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-bottom: 10px;
+  }
+
+  .rotate {
+    transform: rotate(45deg);
+  }
+  
+  
+  .answer-divider {
+    border-top: 1px solid var(--blanco);
+    
+  }
+  
+  .answer {
+    padding-top: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    text-align: left;
+  }
+
+.faqs-info {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 45%;
+    color: var(--color-principal);
+}
+
+.faqs-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.faqs-text {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.question {
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.footer-hr {
+    width: 110px;
+    margin: 0.5rem 0;
+    border-top: 5px solid var(--color-secundario);
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+.footer-link {
+    display: block;
+    text-decoration: none;
+    color: #A6A292;
+    padding-top: 20px;
+}
+
+
+
+/* PAGINA MONITOREO */
+
+.banner-monitoreo {
+    background-color: var(--color-background);
+}
+
+/* Seccion Funciona */
+
+.container-func {
+    margin: 100px auto;
+}
+
+.funcionamiento-title {
+    position: absolute;
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 50px;
+    height: 200px;
+    width: 360px;
+}
+
+.func-monitoreo {
+    padding: 25px 35px;
+    margin: 30px 40px;
+}
+
+.desc-monitoreo {
+    border: 5px solid var(--color-principal);
+    padding: 20px 30px 5px;
+    margin: 30px 40px;
+}
+
+.circulo-blanco {
+    width: 90px;
+    border: 5px solid var(--color-principal);
+    border-radius: 50px;
+    margin-top: -80px;
+}
+
+.desc-title {
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+.desc-texto {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+/* SmartPanics */
+
+.container-phone {
+    background-color: var(--color-background);
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.phone {
+    width: 1000px;
+    height: 745px;
+    margin-left: -300px;
+    transform: scaleX(-1);
+}
+
+.container-smartpanic {
+    position: absolute;
+    width: 800px;
+    margin: 110px 500px;
+}
+
+.smartpanic-title {
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--color-principal);
+}
+
+.smartpanic-text {
+    width: 680px;
+    margin: 40px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.smartpanic-button {
+    font-size: 20px;
+    padding: 10px 40px;
+}
+
+/* Form Input */
+
+.form-label {
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 13%;
+}
+
+.form-input {
+    margin: 5px auto;
+    width: 75%;
+    padding: 10px;
+    border: 2px solid var(--color-secundario-claro);
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.btn-submit {
+    color: var(--blanco);
+    background-color: var(--color-secundario-claro);
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 15px 12.5%;
+}
+
+.title-pasos {
+    color: var(--color-principal);
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.title-paso {
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin: auto 10px;
+}
+
+.text-paso {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.pasos {
+    background-color: #e3e8fe;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin: 20px auto;
+}
+
+.pasos img {
+    width: 40px;
+}
+
+.pasos .paso1 {
+    width: 30px;
+}
