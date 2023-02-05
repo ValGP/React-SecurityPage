@@ -4,11 +4,11 @@ export const ComoFunciona = () => {
     <div className="container container-func">
 
         <div className="row ">
-            <div className="col func-monitoreo">
+            <div className="col func-monitoreo size-mon">
                 <h1 className="funcionamiento-title">¿Como funciona el monitoreo?</h1>
             </div>
 
-            <div className="col desc-monitoreo">
+            <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Disuación</h2>
@@ -17,7 +17,7 @@ export const ComoFunciona = () => {
 
             </div>
 
-            <div className="col desc-monitoreo">
+            <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Evento</h2>
@@ -28,7 +28,7 @@ export const ComoFunciona = () => {
         </div>
 
         <div className="row">
-        <div className="col desc-monitoreo">
+        <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Confirmación</h2>
@@ -37,7 +37,7 @@ export const ComoFunciona = () => {
 
             </div>
 
-            <div className="col desc-monitoreo">
+            <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Acción</h2>
@@ -46,7 +46,7 @@ export const ComoFunciona = () => {
 
             </div>
 
-            <div className="col desc-monitoreo">
+            <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Seguimiento</h2>

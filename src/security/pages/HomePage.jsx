@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 import { Footer } from "../../ui/components/Footer"
 import { Alarmas } from "../components/Alarmas"
 import { BannerDescuento } from "../components/BannerDescuento"
+import { BannerInicio } from "../components/BannerInicio"
 import { FAQs } from "../components/FAQs"
-import { Inicio } from "../components/Inicio"
 import { SeguridadCasas } from "../components/SeguridadCasas"
 
 
@@ -15,12 +15,10 @@ export const HomePage = () => {
 
     <>
 
+      <BannerInicio />
+
     <div className="container">
         
-        {/* INICIO Componente */}
-
-        <Inicio /> 
-
         {/* ALARMAS*/}
         
         <Alarmas />

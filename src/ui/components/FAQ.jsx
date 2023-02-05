@@ -16,6 +16,7 @@ export const FAQ = ({question, answer}) => {
   const toggleAccordion = () => {
     setActive(!active);
   };
+  
   return (
     <>
       <div className="App">

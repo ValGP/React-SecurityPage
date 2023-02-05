@@ -1,25 +1,60 @@
+import { useForm } from "../../../hooks/useForm"
 
 
 export const Formulario = () => {
+
+    const { formState, onInputChange } = useForm({
+        nombre: '',
+        email: '',
+        telefono: '',
+        mensaje: '',
+    })
+
+    const {nombre, email, telefono, mensaje} = formState;
+    
   return (
     
     <div className="container mt-5 mb-5">
         <div className="row">
             <div className="col-xs-12 col-sm-6">
-                <form action="" className="form">
+                <form id="form" action="" className="form">
                     <label className="form-label" htmlFor="">Nombre Completo</label>
-                    <input className="form-control form-input" type="text" />
+                    <input  className="form-control form-input" 
+                            type="text" 
+                            name="nombre"
+                            autoComplete="on"
+                            value={nombre}
+                            onChange={onInputChange}
+                            />
 
                     <label className="form-label" htmlFor="">Email</label>
-                    <input className="form-control form-input" type="email" />
+                    <input  className="form-control form-input" 
+                            type="email" 
+                            name="email"
+                            autoComplete="on"
+                            value={email}
+                            onChange={onInputChange}
+                            />
 
                     <label className="form-label" htmlFor="">Teléfono</label>
-                    <input className="form-control form-input" type="text" />
+                    <input  className="form-control form-input" 
+                            type="text" 
+                            name="telefono"
+                            autoComplete="on"
+                            value={telefono}
+                            onChange={onInputChange}
+                            />
 
                     <label className="form-label" htmlFor="">Mensaje</label>
-                    <textarea className="form-control form-input" type="text" />
+                    <textarea  className="form-control form-input" 
+                            type="text" 
+                            name="mensaje"
+                            autoComplete="on"
+                            value={mensaje}
+                            onChange={onInputChange}
+                            />
 
-                    <button className="btn btn-submit">
+                    <button type="submit" className="btn btn-submit">
                         Enviar Mensaje
                     </button>
                 </form>
