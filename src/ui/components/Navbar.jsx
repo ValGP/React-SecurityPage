@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <>
     
-    <nav className="navbar navbar-expand-sm p-4 mt-2 mb-2 container ">
+    <nav className="navbar navbar-expand-sm p-4 mt-2 mb-2 container">
         
             <Link 
                 className="navbar-brand" 

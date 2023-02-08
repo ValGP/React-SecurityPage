@@ -1,5 +1,7 @@
 import { BannerDescuento } from "../components/BannerDescuento"
-import { BannerInicio } from "../components/BannerInicio"
+import { BannerNosotros } from "../components/Nosotros/BannerNosotros"
+import { NuestrosClientes } from "../components/Nosotros/NuestrosClientes"
+
 
 
 export const NosotrosPage = () => {
@@ -7,8 +9,13 @@ export const NosotrosPage = () => {
     
     <>
 
+      <BannerNosotros />
+
+      <NuestrosClientes />
+
       <BannerDescuento />
 
+      
     </>
 
   )

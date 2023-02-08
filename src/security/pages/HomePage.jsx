@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom"
-import { Footer } from "../../ui/components/Footer"
-import { Alarmas } from "../components/Alarmas"
 import { BannerDescuento } from "../components/BannerDescuento"
+import { BannerFinal } from "../components/BannerFinal"
 import { BannerInicio } from "../components/BannerInicio"
 import { FAQs } from "../components/FAQs"
+import { ListaAlarma } from "../components/ListaAlarma"
+import { ProteccionComercios } from "../components/Reseñas/ProteccionComercios"
+import { Reseñas } from "../components/Reseñas/Reseñas"
 import { SeguridadCasas } from "../components/SeguridadCasas"
 
 
@@ -17,28 +18,27 @@ export const HomePage = () => {
 
       <BannerInicio />
 
+
+      <ListaAlarma />
+      
     <div className="container">
         
-        {/* ALARMAS*/}
-        
-        <Alarmas />
-
-        {/* SECCION SEGURIDAD PARA TODOS */}
         <SeguridadCasas />
         
     </div>
 
-    {/* BANNER DESCUENTO */}
+    <div className="container">
+      <BannerDescuento />
+    </div>
+    
+    <ProteccionComercios />
 
-    <BannerDescuento />
-
-    {/* FAQs */}
+    <Reseñas />
 
     <FAQs />
 
-    {/* Footer */}
-
-    <Footer />
+    <BannerFinal />
+    
 
     </>
   )

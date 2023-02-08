@@ -14,7 +14,7 @@ export const ContactPage = () => {
       <Formulario />
     
 
-      <Footer />
+      
     </>
   )
 }

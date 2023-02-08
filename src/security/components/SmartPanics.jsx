@@ -4,12 +4,13 @@ import { Link } from "react-router-dom"
 export const SmartPanics = () => {
   return (
     <div className="container">
+       
         <div className="row container-phone">
-            <div className="col">
+            <div className="col-xs-12 col-sm-7">
                 <img className="phone" src="/public/img/phone.png" alt="app-smartpanic" />
             </div>
 
-            <div className="col-5 container-smartpanic">
+            <div className="col-xs-12 col-sm-5 container-smartpanic">
                 <h1 className="smartpanic-title"><span className="celeste">Smartpanics</span>, <br />
                 Control al alcance de tu mano. </h1>
 
@@ -28,6 +29,8 @@ export const SmartPanics = () => {
 
 
         </div>
+
+        
     </div>
   )
 }

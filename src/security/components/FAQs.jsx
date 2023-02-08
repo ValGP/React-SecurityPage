@@ -11,15 +11,15 @@ export const FAQs = () => {
 
 
         <div className="question">
-            <FAQ question={"¿Puedo poner el sistema de alarma si tengo mascotas?"} answer={"Asi xddd"}/>
+            <FAQ question={"¿Puedo poner el sistema de alarma si tengo mascotas?"} answer={"Respuesta de ejemplo"}/>
         </div>
 
         <div className="question">
-            <FAQ question={"Como haces eso?"} answer={"Asi xddd"}/>
+            <FAQ question={"¿Pregunta de ejemplo?"} answer={"Respuesta de ejemplo"}/>
         </div>
 
         <div className="question">
-            <FAQ question={"Como haces eso?"} answer={"Asi xddd"}/>
+            <FAQ question={"¿Pregunta de ejemplo?"} answer={"Respuesta de ejemplo"}/>
         </div>
         
 

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import { HomePage, MonitoreoPage, ContactPage, NosotrosPage } from "../security/pages"
+import { Footer } from "../ui/components/Footer"
 import { Navbar } from "../ui/components/Navbar"
 
 
@@ -10,6 +11,7 @@ export const AppRouter = () => {
     <Navbar />
 
     
+    
         <Routes>
 
             <Route path="/" element={<HomePage />} />
@@ -19,7 +21,10 @@ export const AppRouter = () => {
             
 
         </Routes>
+      <Footer />
     </>
+
+    
 
   )
 }
