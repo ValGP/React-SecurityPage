@@ -1,10 +1,11 @@
-import { Footer } from "../../ui/components/Footer"
-import { BannerDescuento } from "../components/BannerDescuento"
-import { BannerMonitoreo } from "../components/BannerMonitoreo"
-import { ComoFunciona } from "../components/ComoFunciona"
-import { PricingTable } from "../components/PricingTable"
-import { SmartPanics } from "../components/SmartPanics"
+import { BannerMonitoreo,
+         ComoFunciona,
+         SmartPanics,
+         PricingTable } from '../components/PaginaMonitoreo'
 
+import { BannerDescuento } from "../components/BannerDescuento"
+
+import '../css'
 
 export const MonitoreoPage = () => {
   return (

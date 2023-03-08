@@ -1,0 +1,53 @@
+
+
+.lista-alarmas {
+    margin-top: -11rem; 
+}
+
+.item-alarma {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 260px;
+    height: 480px;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-background);
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.item-alarma .titulo-alarma {
+    font-size: 1.5rem;
+    color: #1A1E57;
+    font-weight: 700;
+    margin: 1.1rem auto;
+}
+
+.item-alarma p {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.item-alarma img {
+    width: 100px;
+    margin: 10px;
+}
+
+.item-alarma a {
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+
+    .lista-alarmas {
+        margin-top: -5rem; 
+    }
+
+
+    .item-alarma {
+        margin: 30px auto;
+    }
+
+}

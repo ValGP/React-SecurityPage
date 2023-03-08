@@ -1,0 +1,63 @@
+
+.inicio {
+    background-image: url(/public/img/BannerInicio.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.banner-inicio {
+    padding: 13rem 0 350px;
+    width: 80%;
+    margin: auto;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 52px;
+    color: #1A1E57;
+    margin-bottom: 40px;
+}
+
+.texto-desc {
+    width: 600px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.imagen-inicio {
+    display:  none;
+}
+
+@media (max-width: 1400px) { 
+    .inicio {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .inicio {
+        background-image: none;
+    }
+
+    .banner-inicio {
+        padding: 1rem 20px 1rem ;
+        margin: 0;
+        width: 100%;
+    }
+
+    .banner-inicio h1{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .texto-desc {
+        width: auto;
+    }
+
+    .imagen-inicio {
+        display:  inline;
+        width: 100%;
+    }
+  }

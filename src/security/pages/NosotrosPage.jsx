@@ -1,8 +1,9 @@
+import { BannerNosotros,
+         NuestrosClientes } from "../components/PaginaNosotros"
+         
 import { BannerDescuento } from "../components/BannerDescuento"
-import { BannerNosotros } from "../components/Nosotros/BannerNosotros"
-import { NuestrosClientes } from "../components/Nosotros/NuestrosClientes"
-
-
+ 
+import "../css"
 
 export const NosotrosPage = () => {
   return (

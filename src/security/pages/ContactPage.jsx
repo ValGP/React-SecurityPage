@@ -1,6 +1,8 @@
 import { useEffect } from "react"
-import { Footer } from "../../ui/components/Footer"
-import { Formulario } from "../components/Contacto/Formulario"
+
+import { Formulario } from "../components/PaginaContacto/Formulario"
+
+import '../css'
 
 export const ContactPage = () => {
 
@@ -12,9 +14,7 @@ export const ContactPage = () => {
     <>
     
       <Formulario />
-    
-
-      
+         
     </>
   )
 }

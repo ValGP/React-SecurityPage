@@ -1,36 +1,31 @@
+import { BannerInicio, 
+         AlarmSlider, 
+         EquiposSlider,
+         SeguridadCasas,
+         ProteccionComercios,
+         Reseñas,
+         FAQs,
+         BannerFinal } from "../components/PaginaInicio"
 import { BannerDescuento } from "../components/BannerDescuento"
-import { BannerFinal } from "../components/BannerFinal"
-import { BannerInicio } from "../components/BannerInicio"
-import { FAQs } from "../components/FAQs"
-import { ListaAlarma } from "../components/ListaAlarma"
-import { ProteccionComercios } from "../components/Reseñas/ProteccionComercios"
-import { Reseñas } from "../components/Reseñas/Reseñas"
-import { SeguridadCasas } from "../components/SeguridadCasas"
 
-
-
+import '../css'
 
 export const HomePage = () => {
 
   return (
 
     <>
-
-      <BannerInicio />
-
-
-      <ListaAlarma />
       
-    <div className="container">
-        
-        <SeguridadCasas />
-        
-    </div>
+    <BannerInicio />
 
-    <div className="container">
-      <BannerDescuento />
-    </div>
+    <AlarmSlider/>
     
+    <SeguridadCasas/>  
+  
+    <BannerDescuento /> 
+    
+    <EquiposSlider/>
+
     <ProteccionComercios />
 
     <Reseñas />
@@ -38,8 +33,7 @@ export const HomePage = () => {
     <FAQs />
 
     <BannerFinal />
-    
-
+     
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import './ui.css'
 
 export const Navbar = () => {
 
@@ -26,7 +27,7 @@ export const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className={`collapse navbar-collapse nav-items`} id="navbarNav" ref={ref}>
-                <div className="animate__animated animate__fadeInDown">
+                <div >
                     <div className="navbar-nav mt-3">
                         
                         <NavLink 

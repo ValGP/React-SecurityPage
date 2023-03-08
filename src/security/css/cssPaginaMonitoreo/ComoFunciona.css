@@ -1,0 +1,53 @@
+
+
+.container-func {
+    margin: 100px auto;
+}
+
+.funcionamiento-title {
+    /* position: absolute; */
+    color: var(--color-principal);
+    font-weight: bold;
+    font-size: 50px;
+    height: 200px;
+    width: 290px;
+}
+
+.func-monitoreo {
+    padding: 25px 35px;
+    margin: 30px 40px;
+}
+
+@media (max-width: 480px) {
+    .func-monitoreo {
+        padding: 10px;
+    }
+
+}
+
+.desc-monitoreo {
+    border: 5px solid var(--color-principal);
+    padding: 20px 30px 5px;
+    margin: 30px 40px;
+}
+
+.circulo-blanco {
+    width: 90px;
+    border: 5px solid var(--color-principal);
+    border-radius: 50px;
+    margin-top: -80px;
+}
+
+.desc-title {
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+.desc-texto {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.size-mon {
+    height: 240px;
+}
