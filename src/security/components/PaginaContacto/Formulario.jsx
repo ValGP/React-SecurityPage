@@ -22,7 +22,7 @@ export const Formulario = () => {
     
   return (
     
-    <div data-aos="fade-up" className="container mt-5 mb-5">
+    <div data-aos="fade-up" className="container">
         <div className="row">
             <div className="col-xs-12 col-sm-6">
                 <form id="form" action="" className="form">

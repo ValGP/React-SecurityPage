@@ -7,7 +7,7 @@ export const EquiposSlider = () => {
   return (
     <section className='equipos'>
         <div className="container">
-            <h2 >EQUIPOS</h2>
+            <h2 >Equipos</h2>
             <hr />
         </div>
         <div className="container-equipos">
@@ -17,7 +17,7 @@ export const EquiposSlider = () => {
         className="mySwiper"
         breakpoints={{
           0: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.5,
             spaceBetween: 20,
             initialSlide: 1,
             loop: true,
@@ -28,14 +28,18 @@ export const EquiposSlider = () => {
             initialSlide: 1,
             loop: true,
           },
-          768: {
-            slidesPerView: 3.5,
-            spaceBetween: 15,
+          768: { 
+            slidesPerView: 3,
+            spaceBetween: 30,
           },
-          1024: {
+          1200: {
+            slidesPerView: 4.4,
+            spaceBetween: 25,
+          },
+          1800: {
             slidesPerView: 6,
             spaceBetween: 15,
-          },
+          }
         }}
       >
         <SwiperSlide className='swiperSlide'></SwiperSlide>

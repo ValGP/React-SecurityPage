@@ -1,4 +1,11 @@
 
 .banner-monitoreo {
     background-color: var(--color-background);
+    
+}
+
+@media (max-width: 900px) { 
+    .banner-monitoreo {
+        padding-top: 100px;
+    }
 }

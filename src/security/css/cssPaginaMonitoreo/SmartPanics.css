@@ -38,11 +38,19 @@
     padding: 10px 40px;
 }
 
+@media (max-width: 1500px) { 
+    .container-phone {
+        transform: scale(0.9);
+    }
+    
+}
+
 @media (max-width: 480px) {
     .container-phone {
         padding-top: 20px;
         padding-bottom: 50px;
         border-radius: 0;
+        transform: scale(1);
     }
     .container-smartpanic {
         margin: 0;

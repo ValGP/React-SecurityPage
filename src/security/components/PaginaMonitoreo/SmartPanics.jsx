@@ -27,12 +27,10 @@ export const SmartPanics = () => {
                     conectar y desconectar el sistema, recibir notificaciones de su actividad y
                     muchas cosas más.</p>
 
-                <div data-aos="fade-up" className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex">
-                    <Link   className="nav-link nav-item link-button smartpanic-button"
-                                to="/contacto">
-                            Contratar
+                    <Link   className="boton_principal"
+                            to="/contacto">
+                        Contratar
                     </Link>
-                </div>
             </div>
 
 

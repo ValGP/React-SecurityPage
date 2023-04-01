@@ -4,8 +4,8 @@
     background-image: url(/public/img/BannerFinal.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 150px;
     text-align: center;
     width: 100%;
 }
@@ -38,6 +38,7 @@
 
     .container-banner {
         width: 95%;
+        height: 200px;
     }
     .banner-final {
         background-size: cover;
@@ -49,8 +50,10 @@
     }
     .banner-final h1 {
         margin-bottom: 50px;
+        font-size: 2rem;
     }
     .banner-final p {
-        display: none;
+        font-size: 15px;
+        text-align: center;
     }
 }

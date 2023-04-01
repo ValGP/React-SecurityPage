@@ -33,7 +33,7 @@ export const HomePage = () => {
     <FAQs />
 
     <BannerFinal />
-     
+    
     </>
   )
 }

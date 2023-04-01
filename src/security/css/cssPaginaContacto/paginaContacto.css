@@ -27,6 +27,12 @@ textarea {
     margin: 15px 12.5%;
 }
 
+@media (max-width: 900px) { 
+    form {
+        padding-top: 100px;
+    }
+}
+
 .title-pasos {
     color: var(--color-principal);
     font-weight: 600;

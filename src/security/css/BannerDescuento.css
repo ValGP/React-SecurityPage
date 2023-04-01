@@ -1,5 +1,4 @@
 
-
 .banner-contrata {
     width: 1500;
     height: 450;
@@ -8,7 +7,7 @@
     background-image: url('/public/img/edificios-azul.png');
     background-size: cover;
     background-position: center;
-    padding: 4rem;
+    padding: 5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
@@ -19,16 +18,24 @@
 
 .banner-texto {
     width: 800px;
-    margin: 1rem auto;
+    margin: 1.8rem auto;
 }
 
-.banner-button {
-    background-color: white;
-    color: #1A1E57;
+.boton_contrata {
+    background-color: var(--color-background);
+    color: var(--color-principal);
+    justify-items: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
-#banner-button {
-    color: #1A1E57;
+@media (max-width: 900px) {
+    .banner-texto {
+        width: 90%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -44,12 +51,7 @@
         font-size: 2.5rem;
     }
 
-    .banner-texto {
-        width: 90%;
+    .boton_contrata {
+        font-size: 1rem;
     }
-
-    .banner-button {
-        text-align: center;
-    }
-
 }

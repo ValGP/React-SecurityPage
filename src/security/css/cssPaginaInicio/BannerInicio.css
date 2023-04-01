@@ -5,6 +5,9 @@
     background-size: contain;
 }
 
+.inicio .titulo {
+    margin-bottom: 40px;
+}
 
 .banner-inicio {
     padding: 13rem 0 350px;
@@ -12,17 +15,10 @@
     margin: auto;
 }
 
-.titulo {
-    font-weight: bold;
-    font-size: 52px;
-    color: #1A1E57;
-    margin-bottom: 40px;
-}
-
 .texto-desc {
-    width: 600px;
+    width: 580px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
@@ -32,13 +28,43 @@
 
 @media (max-width: 1400px) { 
     .inicio {
-        background-size: cover;
+        background-size: 120%;
+    }
+    .banner-inicio {
+        padding: 10rem 0 350px;
     }
 }
+
+@media (max-width: 900px) { 
+    .inicio {
+        background: none;
+    }
+    .inicio .titulo {
+        text-align: center;
+    }
+    .texto-desc {
+        text-align: center;
+    }
+    
+    .imagen-inicio {
+        display:  inline;
+        width: 100%;
+    }
+    .banner-inicio {
+        padding-bottom: 3rem;
+    }
+}
+
+
 
 @media (max-width: 480px) {
     .inicio {
         background-image: none;
+        padding-top: 100px;
+    }
+
+    .inicio .titulo {
+        font-size: 1.8rem;
     }
 
     .banner-inicio {
@@ -47,17 +73,10 @@
         width: 100%;
     }
 
-    .banner-inicio h1{
-        font-size: 2.5rem;
-        width: 100%;
-    }
-
     .texto-desc {
         width: auto;
+        font-size: 0.93rem;
     }
 
-    .imagen-inicio {
-        display:  inline;
-        width: 100%;
-    }
+    
   }

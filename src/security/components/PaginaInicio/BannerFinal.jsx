@@ -15,18 +15,18 @@ export const BannerFinal = () => {
         <div className="container-banner">
             <h1 data-aos="fade-up">Disfruta de la tranquilidad de estar seguro</h1>
 
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</p>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
 
-            <div data-aos="fade-up" className="navbar-collapse d-flex banner-links w-75">
-                    <Link   className="nav-link nav-item link-button"
+            <div className="container_buttons justify-content-center">
+                    <Link   className="boton_principal"
                             to="/contacto">
                         Contratar
                     </Link>
 
-                    <Link  className="nav-link nav-item"
+                    <Link  className="boton_secundario"
                            to="/monitoreo">
                         Descubrir
+          
                     </Link>
             </div>
         </div>

@@ -14,19 +14,23 @@ export const ProteccionComercios = () => {
             grabCursor={true}
             className="mySwiper"
             breakpoints={{
-            0: {
+            0: { 
                 slidesPerView: 1,
                 spaceBetween: 10,
             },
             480: {
-                slidesPerView: 1,
-                spaceBetween: 10,
+                slidesPerView: 2,
+                spaceBetween: 15,
             },
             768: {
                 slidesPerView: 2,
                 spaceBetween: 15,
             },
-            1024: {
+            960: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+            1400: {
                 slidesPerView: 5,
                 spaceBetween: 15,
             },

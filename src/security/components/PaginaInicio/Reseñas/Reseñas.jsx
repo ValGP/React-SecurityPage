@@ -28,31 +28,35 @@ export const Reseñas = () => {
 
         <div className="reseñas">
             
-            <div className="container">
+            <div className="container container_reseñas">
                 
             
                 <Swiper
-                    data-aos="fade-up"
+                    // data-aos="fade-up"
                     loop={true}
                     pagination={true}
                     autoplay={true} 
                     modules={[Pagination, Autoplay]} 
                     grabCursor={true}
-                    className="mySwiper"
+                    className="swiper_reseñas"
                     breakpoints={{
                     0: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 0,
                     },
                     480: {
                         slidesPerView: 1,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 15,
                     },
                     1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    1400: {
                         slidesPerView: 3,
                         spaceBetween: 10,
                     },

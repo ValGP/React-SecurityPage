@@ -6,7 +6,7 @@
 }
 
 .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .section-title h2 {
@@ -69,6 +69,12 @@
 }
 .single-table.popular {
     position: relative;
+    bottom: 70px;
+}
+@media (max-width: 900px) {
+    .single-table.popular {
+        bottom: 0px;
+    }
 }
 .popular-price {
     position: absolute;

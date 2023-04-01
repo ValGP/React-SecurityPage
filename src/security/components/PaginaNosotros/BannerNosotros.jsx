@@ -43,14 +43,13 @@ export const BannerNosotros = () => {
             dolore magna aliquam erat volutpat. Ut wisi enim ad
             minim veniam, quis nos.</p>
 
-            <p>Guillermo Berardo</p>
+            <p className="mb-4">Guillermo Berardo</p>
 
-            <div data-aos="fade-up" className="d-flex">
-                    <Link   className="nav-link nav-item link-button"
+            <Link   className="boton_principal"
                             to="/contacto">
                         Contratar
-                    </Link>
-            </div>
+            </Link>
+
           </div>
         </div>
 

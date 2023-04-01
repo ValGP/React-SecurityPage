@@ -18,9 +18,9 @@ export const MonitoreoPage = () => {
       <SmartPanics />
 
       <PricingTable />
-      <div className="container">
-        <BannerDescuento />
-      </div>
+      
+      <BannerDescuento />
+      
       
 
       

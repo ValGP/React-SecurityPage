@@ -27,8 +27,8 @@
     margin-left: 8px;
   }
   
-  .question-styling {
-    font-size: 17px;
+  .question-style {
+    font-size: 22px;
     width: 100%;
   }
 
@@ -54,7 +54,7 @@
     border-top: 1px solid var(--blanco);
     
   }
-  
+   
   .answer {
     padding-top: 10px;
     margin-left: 8px;
@@ -72,12 +72,6 @@
     color: var(--color-principal);
 }
 
-@media (max-width: 480px) {
-    .faqs-info {
-        width: 90%;
-    }
-}
-
 .faqs-title {
     font-weight: 600;
     font-size: 3.5rem;
@@ -92,4 +86,27 @@
 
 .question {
     margin-top: 15px;
+}
+
+@media (max-width: 768px) { 
+  .faqs-info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .faqs-title {
+    font-size: 1.7rem;
+  }
+
+  .faqs-text {
+    font-size: 1rem;
+  }
+
+  .question-style {
+    font-size: 17px;
+    width: 100%;
+  }
+
 }

@@ -2,10 +2,11 @@
 
 .container-func {
     margin: 100px auto;
+    
 }
 
 .funcionamiento-title {
-    /* position: absolute; */
+    position: absolute;
     color: var(--color-principal);
     font-weight: bold;
     font-size: 50px;
@@ -16,6 +17,13 @@
 .func-monitoreo {
     padding: 25px 35px;
     margin: 30px 40px;
+}
+
+
+@media (max-width: 1200px) { 
+    .funcionamiento-title {
+        position: initial;
+    }
 }
 
 @media (max-width: 480px) {

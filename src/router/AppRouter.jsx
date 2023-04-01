@@ -3,28 +3,17 @@ import { HomePage, MonitoreoPage, ContactPage, NosotrosPage } from "../security/
 import { Footer } from "../ui/components/Footer"
 import { Navbar } from "../ui/components/Navbar"
 
-
 export const AppRouter = () => {
   return (
     <>
-
     <Navbar />
-
-    
-    
         <Routes>
-
             <Route path="/" element={<HomePage />} />
             <Route path="monitoreo" element={<MonitoreoPage />} />
             <Route path="nosotros" element={<NosotrosPage />} />
-            <Route path="contacto" element={<ContactPage />} />
-            
-
+            <Route path="contacto" element={<ContactPage />} />  
         </Routes>
       <Footer />
     </>
-
-    
-
   )
 }
