@@ -49,13 +49,21 @@
 .desc-title {
     color: var(--color-secundario);
     font-weight: 700;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 .desc-texto {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .size-mon {
     height: 240px;
+}
+
+@media (max-width: 500px) { 
+    .desc-monitoreo {
+        margin-top: 60px;
+    }
 }

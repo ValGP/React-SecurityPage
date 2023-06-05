@@ -22,7 +22,7 @@ export const PricingTable = () => {
             </div>
 
             <div className="row">
-                <div className="col-md-4">
+                <div className="col-md-4 order-1 order-xl-2">
                     <div className="single-table">
                         <img src="/public/img/circle.png" alt="" />
                         <h4>Esencial</h4>
@@ -40,7 +40,7 @@ export const PricingTable = () => {
                     </div>
                 </div>
 
-                <div className="col-md-4">
+                <div className="col-md-4 order-sm-1 order-xl-2">
                     <div data-aos="fade-up" className="single-table popular">
                         <div className="popular-price">---------------</div>
                             <img src="/public/img/circle.png" alt="" />
@@ -61,7 +61,7 @@ export const PricingTable = () => {
                     </div>
                 </div>
                     
-                <div className="col-md-4">
+                <div className="col-md-4 order-sm-3">
                     <div className="single-table">
                         <img src="/public/img/circle.png" alt="" />
                         <h4>Premium</h4>

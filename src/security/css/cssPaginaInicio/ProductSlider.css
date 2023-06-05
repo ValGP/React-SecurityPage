@@ -2,24 +2,25 @@
 
 .lista-alarmas {
     margin-top: -11rem; 
+    margin-bottom: 100px;
+    
 }
 
 .item-alarma {
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 260px;
-    height: 480px;
-    text-align: center;
+    width: 250px;
+    height: 400px;
     padding: 3rem 1.5rem;
-    background-color: var(--color-background);
-    border-radius: 15px;
+    background-color: var(--color-principal);
+    border-radius: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
      
 }
 
 .item-alarma .titulo-alarma {
     font-size: 1.5rem;
-    color: #1A1E57;
+    color: var(--blanco);
     font-weight: 700;
     margin: 1.1rem auto;
 }
@@ -30,8 +31,7 @@
 }
 
 .item-alarma img {
-    width: 100px;
-    margin: 10px;
+    width: 80px;
 }
 
 .item-alarma a {
@@ -47,10 +47,10 @@
     }
 
 
-    .item-alarma {
-        /* margin: 30px auto; */
+    /* .item-alarma {
+        margin: 30px auto; 
         width: 90%;
         height: 400px;
-    }
+    } */
 
 }

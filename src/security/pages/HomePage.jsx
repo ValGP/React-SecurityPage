@@ -9,6 +9,7 @@ import { BannerInicio,
 import { BannerDescuento } from "../components/BannerDescuento"
 
 import '../css'
+import { FondoAzul } from "../../ui/components/FondoAzul"
 
 export const HomePage = () => {
 
@@ -33,6 +34,8 @@ export const HomePage = () => {
     <FAQs />
 
     <BannerFinal />
+
+    <FondoAzul />
     
     </>
   )

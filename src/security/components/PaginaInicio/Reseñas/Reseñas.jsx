@@ -42,7 +42,7 @@ export const Reseñas = () => {
                     breakpoints={{
                     0: {
                         slidesPerView: 1,
-                        spaceBetween: 0,
+                        spaceBetween: 10,
                     },
                     480: {
                         slidesPerView: 1,
@@ -63,7 +63,7 @@ export const Reseñas = () => {
                     }}
                 >
                 <SwiperSlide>
-                    <div className="col-4 reseña">
+                    <div className="reseña">
                         <img src="/public/img/circle.png" alt="" />
                         <p>Excelente servicio. Entre
                             todos los que me contacte
@@ -76,7 +76,7 @@ export const Reseñas = () => {
                     </div>            
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="col-4 reseña">
+                    <div className="reseña">
                         <img src="/public/img/circle.png" alt="" />
                         <p>Excelente servicio. Entre
                             todos los que me contacte
@@ -89,7 +89,7 @@ export const Reseñas = () => {
                     </div>            
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="col-4 reseña">
+                    <div className="reseña">
                         <img src="/public/img/circle.png" alt="" />
                         <p>Excelente servicio. Entre
                             todos los que me contacte

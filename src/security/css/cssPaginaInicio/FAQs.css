@@ -46,7 +46,7 @@
   }
 
   .rotate {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
   }
   
   
@@ -66,15 +66,15 @@
   }
 
 .faqs-info {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     width: 50%;
     color: var(--color-principal);
 }
 
 .faqs-title {
     font-weight: 600;
-    font-size: 3.5rem;
+    font-size: 3.4rem;
 }
 
 .faqs-text {

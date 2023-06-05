@@ -8,8 +8,8 @@ export const EquiposSlider = () => {
     <section className='equipos'>
         <div className="container">
             <h2 >Equipos</h2>
-            <hr />
-        </div>
+            
+        </div> 
         <div className="container-equipos">
         <Swiper
         

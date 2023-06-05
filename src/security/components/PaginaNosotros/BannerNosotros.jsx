@@ -12,36 +12,25 @@ export const BannerNosotros = () => {
 
   return (
     
-    <div className="container">
+  <div className="container">
         <div className="row nosotros">
-          <div className="col-xs-12 col-sm-6 row nosotros-img">
-            <div className="col-6">
-              <img className="first-item" src="/public/img/camara-nosotros.jpg" alt="" />
-            </div>
-            <div className="col-6">
-              <img className="second-item" src="/public/img/camara-nosotros.jpg" alt="" />
-            </div>
-            <div className="col-6">
-              <img className="third-item" src="/public/img/camara-nosotros.jpg" alt="" />
-            </div>  
+          <div className="col-xs-12 col-xl-6 row order-2">  
             
-            <div className="col-6">
-              <h4><span>+10</span>Años</h4>  
-            </div> 
+            <img src="/img/camara-nosotros.jpg" alt="" />
                  
           </div>
 
-          <div className="col-xs-12 col-sm-6">
+          <div className="col-xs-12 col-xl-6 order-1 order-xl-2">
             <h1 data-aos="fade-up" className="titulo">Confianza, integridad y experiencia</h1>  
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            <p className="descripcion-nosotros">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
             sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna aliquam erat volutpat. Ut wisi enim ad.</p>   
+            dolore magna aliquam erat volutpat.</p>   
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
             sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad
-            minim veniam, quis nos.</p>
+            minim veniam.</p>
 
             <p className="mb-4">Guillermo Berardo</p>
 
@@ -54,7 +43,7 @@ export const BannerNosotros = () => {
         </div>
 
 
-    </div>
+  </div>
 
   )
 }

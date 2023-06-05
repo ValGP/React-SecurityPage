@@ -7,6 +7,10 @@
     margin-top: 80px;
 }
 
+.marcas {
+    margin: 50px auto;
+}
+
 .marcas img {
     width: 250px;
 }
@@ -33,8 +37,7 @@
 .reseñas {
     background-color: var(--color-background);
     padding-top: 200px;
-    margin-top: -80px;
-    
+    margin-top: -80px;  
 }
 
 .reseña {
@@ -42,7 +45,7 @@
     width: 400px;
     height: 465px;
     border-radius: 10px;
-    margin: 60px 10px 150px;
+    margin: 60px auto 150px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -67,22 +70,49 @@
     margin: 15px auto 0;
 }
 
+
+
+.swiper-container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) { 
+    .estrellas {
+        display: none;
+    }
+    .reseñas {
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+}
+
 @media (max-width: 480px) {
 
-    .estrellas {
-       display: none;
-    }
-    
-    .reseñas {
-        padding-top: 80px;
-        margin-top: 0px;
-        display: flex;
-        align-items: center;
-        
-    }
+    /* .reseñas {
+        /* padding-top: 80px; */
+        /* display: flex; */
+        /* align-items: center;         
+    } */
 
     .reseña {
-        margin: 0px;
+        margin: 30px;
         transform: scale(0.8);
     }
 

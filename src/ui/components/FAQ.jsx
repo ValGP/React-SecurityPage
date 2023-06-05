@@ -1,6 +1,5 @@
-
 import React, { useState, useRef, useEffect } from "react";
-import { FiPlus } from "react-icons/fi";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const FAQ = ({question, answer}) => {
   const [active, setActive] = useState(false);
@@ -30,7 +29,7 @@ export const FAQ = ({question, answer}) => {
                 <h4 className="question-style">
                     {question}
                 </h4>
-                <FiPlus
+                <IoIosArrowDown
                   className={active ? `question-icon rotate` : `question-icon`}
                 /> 
               </div>

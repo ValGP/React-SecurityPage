@@ -11,25 +11,28 @@ export const BannerFinal = () => {
   }, [])
 
   return (
+
+  <div className="container">
     <div className="banner-final">
-        <div className="container-banner">
-            <h1 data-aos="fade-up">Disfruta de la tranquilidad de estar seguro</h1>
+      <div className="container-banner">
+          <h1 data-aos="fade-up">Obtén asesoría gratuita para proteger tu hogar o tu negocio</h1>
 
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
-
-            <div className="container_buttons justify-content-center">
+      
+          <div className="container_buttons botones-banner">
                     <Link   className="boton_principal"
                             to="/contacto">
                         Contratar
                     </Link>
-
                     <Link  className="boton_secundario"
-                           to="/monitoreo">
-                        Descubrir
-          
+                            to="/monitoreo">
+                          Descubrir
+            
                     </Link>
-            </div>
-        </div>
+          </div>
+      </div>
     </div>
+  </div>
+      
+    
   )
 }

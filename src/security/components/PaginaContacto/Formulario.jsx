@@ -3,6 +3,8 @@ import { useForm } from "../../../hooks/useForm"
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+// import nodemailer from 'nodemailer';
+
 
 export const Formulario = () => {
 
@@ -19,13 +21,48 @@ export const Formulario = () => {
     })
 
     const {nombre, email, telefono, mensaje} = formState;
+
+    const handleSubmit = async (e) => { }
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    
+    //     // Configurar el servicio de correo electrónico
+    //     const transporter = nodemailer.createTransport({
+    //       host: "smtp.gmail.com",
+    //       port: 465,
+    //       secure: true,
+    //       auth: {
+    //         user: "tu_correo_electronico@gmail.com",
+    //         pass: "tu_contraseña",
+    //       },
+    //     });
+    
+    //     try {
+    //       // Enviar el correo electrónico
+    //       const info = await transporter.sendMail({
+    //         from: "Remitente <tu_correo_electronico@gmail.com>",
+    //         to: "Destinatario <destinatario@gmail.com>",
+    //         subject: "Nuevo mensaje desde el formulario de contacto",
+    //         html: `
+    //           <p>Nombre: ${nombre}</p>
+    //           <p>Email: ${email}</p>
+    //           <p>Teléfono: ${telefono}</p>
+    //           <p>Mensaje: ${mensaje}</p>
+    //         `,
+    //       });
+    
+    //       console.log("Mensaje enviado: %s", info.messageId);
+    //     } catch (error) {
+    //       console.error(error);
+    //     }
+    // };
     
   return (
     
     <div data-aos="fade-up" className="container">
         <div className="row">
             <div className="col-xs-12 col-sm-6">
-                <form id="form" action="" className="form">
+                <form id="form" action="" className="form" onSubmit={handleSubmit}>
                     <label className="form-label" htmlFor="">Nombre Completo</label>
                     <input  className="form-control form-input" 
                             type="text" 

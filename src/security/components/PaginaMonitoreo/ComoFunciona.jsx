@@ -11,7 +11,8 @@ export const ComoFunciona = () => {
     
 
   return (
-    <div className="container container-func">
+    <>
+        <div className="container container-func">
 
         <div className="row ">
             <div className="col func-monitoreo size-mon">
@@ -38,7 +39,7 @@ export const ComoFunciona = () => {
         </div>
 
         <div className="row">
-        <div className="col desc-monitoreo size-mon">
+            <div className="col desc-monitoreo size-mon">
                 <img className="circulo-blanco" src="/public/img/white-circle.png" alt="" />
 
                 <h2 className="desc-title">Confirmación</h2>
@@ -64,8 +65,12 @@ export const ComoFunciona = () => {
                 <p className="desc-texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum</p>
 
             </div>
+            </div>
+
         </div>
 
-    </div>
+
+    </>
+    
   )
 }

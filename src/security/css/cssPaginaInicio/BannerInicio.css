@@ -19,7 +19,7 @@
     width: 580px;
     font-weight: 500;
     font-size: 1.3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .imagen-inicio {
@@ -62,7 +62,7 @@
         background-image: none;
         padding-top: 100px;
     }
-
+ 
     .inicio .titulo {
         font-size: 1.8rem;
     }
