@@ -1,61 +1,47 @@
-import { useForm } from "../../../hooks/useForm"
-
+import { useForm } from "../../../hooks/useForm";
+import axios from 'axios';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-// import nodemailer from 'nodemailer';
-
 
 export const Formulario = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 2000, once: 'true' });
-      }, [])
-    
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: 'true' });
+  }, []);
 
-    const { formState, onInputChange } = useForm({
-        nombre: '',
-        email: '',
-        telefono: '',
-        mensaje: '',
-    })
+  const { formState, onInputChange } = useForm({
+    nombre: '',
+    email: '',
+    telefono: '',
+    mensaje: '',
+  });
 
-    const {nombre, email, telefono, mensaje} = formState;
+  const { nombre, email, telefono, mensaje } = formState;
 
-    const handleSubmit = async (e) => { }
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    
-    //     // Configurar el servicio de correo electrónico
-    //     const transporter = nodemailer.createTransport({
-    //       host: "smtp.gmail.com",
-    //       port: 465,
-    //       secure: true,
-    //       auth: {
-    //         user: "tu_correo_electronico@gmail.com",
-    //         pass: "tu_contraseña",
-    //       },
-    //     });
-    
-    //     try {
-    //       // Enviar el correo electrónico
-    //       const info = await transporter.sendMail({
-    //         from: "Remitente <tu_correo_electronico@gmail.com>",
-    //         to: "Destinatario <destinatario@gmail.com>",
-    //         subject: "Nuevo mensaje desde el formulario de contacto",
-    //         html: `
-    //           <p>Nombre: ${nombre}</p>
-    //           <p>Email: ${email}</p>
-    //           <p>Teléfono: ${telefono}</p>
-    //           <p>Mensaje: ${mensaje}</p>
-    //         `,
-    //       });
-    
-    //       console.log("Mensaje enviado: %s", info.messageId);
-    //     } catch (error) {
-    //       console.error(error);
-    //     }
-    // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('http://localhost:3001/enviar-correo', {
+        nombre,
+        email,
+        telefono,
+        mensaje
+      });
+
+      // Lógica adicional después de enviar el correo electrónico, si es necesario
+
+      // Limpiar el formulario
+    //   onInputChange('nombre', '');
+    //   onInputChange('email', '');
+    //   onInputChange('telefono', '');
+    //   onInputChange('mensaje', '');
+    } catch (error) {
+      console.error('Error al enviar el correo electrónico:', error);
+    }
+  };
+
     
   return (
     
