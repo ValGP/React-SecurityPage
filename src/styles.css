@@ -36,7 +36,7 @@
 .container_buttons {
     display: flex;  
 }
- 
+  
 .boton_principal {
     background-color: var(--color-secundario);
     color: var(--blanco);

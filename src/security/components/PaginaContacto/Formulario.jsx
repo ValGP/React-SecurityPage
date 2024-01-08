@@ -2,7 +2,7 @@ import { useForm } from "../../../hooks/useForm";
 import axios from 'axios';
 import Aos from "aos";
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Formulario = () => {
 
@@ -10,33 +10,36 @@ export const Formulario = () => {
     Aos.init({ duration: 2000, once: 'true' });
   }, []);
 
-  const { formState, onInputChange } = useForm({
+  const { formState, onInputChange, onResetForm } = useForm({
     nombre: '',
     email: '',
     telefono: '',
     mensaje: '',
   });
 
+  const [mensajeEnviado, setMensajeEnviado] = useState(false);
   const { nombre, email, telefono, mensaje } = formState;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    //const url = 'https://backend-security-page.vercel.app/enviar-correo'
+    const url = 'http://localhost:3002/enviar-correo'
 
     try {
-      await axios.post('http://localhost:3001/enviar-correo', {
+      await axios.post(url, {
         nombre,
         email,
         telefono,
         mensaje
       });
 
-      // Lógica adicional después de enviar el correo electrónico, si es necesario
+      //Lógica adicional después de enviar el correo electrónico, si es necesario
 
-      // Limpiar el formulario
-    //   onInputChange('nombre', '');
-    //   onInputChange('email', '');
-    //   onInputChange('telefono', '');
-    //   onInputChange('mensaje', '');
+      //Limpiar el formulario
+      onResetForm();
+
+      setMensajeEnviado(true);
+
     } catch (error) {
       console.error('Error al enviar el correo electrónico:', error);
     }
@@ -88,6 +91,11 @@ export const Formulario = () => {
                     <button type="submit" className="btn btn-submit">
                         Enviar Mensaje
                     </button>
+                    {mensajeEnviado && 
+                        <div>
+                            Mensaje Enviado Correctamente
+                        </div>
+                    }
                 </form>
             </div>
 
