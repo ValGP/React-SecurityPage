@@ -19,7 +19,7 @@ export const NuestrosClientes = () => {
                 <p>Su índice de fidelizacion es alto, debido al compromiso y seriedad de Berardo en el manejo de la inversion de sus clientes con seguridad y respeto.</p>
             </div>
             <div className="col-xs-12 col-xl-6">
-                <img src="/img/nuestrosClientes.jpg" alt="" />
+                <img src="/public/img/nuestrosClientes.jpg" alt="" />
             </div>
       </div>
   </div>

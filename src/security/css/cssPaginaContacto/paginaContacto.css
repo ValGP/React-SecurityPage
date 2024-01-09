@@ -24,7 +24,8 @@ textarea {
     background-color: var(--color-secundario-claro);
     font-weight: 700;
     padding: 10px 20px;
-    margin: 15px 12.5%;
+    margin: 15px 2% 15px 14%;
+    
 }
 
 @media (max-width: 900px) { 
@@ -67,4 +68,32 @@ textarea {
 
 .pasos .paso1 {
     width: 30px;
+}
+
+.mensaje_enviado{
+    background-color: #d4edda; /* Color de fondo */
+    border: 1px solid #28a745; /* Borde verde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1px; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+    margin-top: 15px; /* Margen superior para separar del botón */
+    margin-left: 0px;
+    margin-right: 300px;
+    margin-bottom: 15px;
+
+    font-weight: bold;
+    font-size: 25px;
+    color: #28a745;
+}
+
+@media (max-width: 1366px) { 
+    .mensaje_enviado {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .mensaje_enviado {
+        margin-right: 60px;
+    }
 }

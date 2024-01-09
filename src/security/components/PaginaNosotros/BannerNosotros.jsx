@@ -16,7 +16,7 @@ export const BannerNosotros = () => {
         <div className="row nosotros">
           <div className="col-xs-12 col-xl-6 row order-2">  
             
-            <img src="/img/camara-nosotros.jpg" alt="" />
+            <img src="/public/img/camara-nosotros.jpg" alt="" />
                  
           </div>
 

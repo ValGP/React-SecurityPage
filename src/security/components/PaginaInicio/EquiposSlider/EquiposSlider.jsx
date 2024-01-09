@@ -42,7 +42,7 @@ export const EquiposSlider = () => {
           }
         }}
       >
-        <SwiperSlide className='swiperSlide'></SwiperSlide>
+        {/* <SwiperSlide className='swiperSlide'></SwiperSlide> */}
         <SwiperSlide>
           <Equipo />
         </SwiperSlide>

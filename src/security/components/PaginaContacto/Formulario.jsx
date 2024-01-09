@@ -22,8 +22,8 @@ export const Formulario = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //const url = 'https://backend-security-page.vercel.app/enviar-correo'
-    const url = 'http://localhost:3002/enviar-correo'
+    const url = 'https://backend-security-page.vercel.app/enviar-correo'
+    //const url = 'http://localhost:3002/enviar-correo'
 
     try {
       await axios.post(url, {
@@ -88,14 +88,18 @@ export const Formulario = () => {
                             onChange={onInputChange}
                             />
 
-                    <button type="submit" className="btn btn-submit">
-                        Enviar Mensaje
-                    </button>
-                    {mensajeEnviado && 
-                        <div>
-                            Mensaje Enviado Correctamente
-                        </div>
-                    }
+                    <div className="row">
+                        
+                        <button type="submit" className="btn btn-submit col-auto">
+                            Enviar Mensaje
+                        </button>
+                        {mensajeEnviado && 
+                            <div className="col mensaje_enviado">
+                                ✓
+                            </div>
+                        }
+                    </div>
+                    
                 </form>
             </div>
 
